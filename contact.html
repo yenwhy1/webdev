@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Contact</title>
+    </head>
+    <body>
+        
+         <nav>
+            <a class="logo" href="home-page.html"> 
+            <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif" > Nablian  </h2>
+            </a>
+             <div class="navbar">
+                    <ul>
+                        <li> <a href="about-us.html">About Us </a>
+                            <ul class="dropdown" >
+                                <li><a href="blog-section.html">Blog Section  </a></li>
+                                <li><a href="events-updates.html">Events and Updates</a></li>
+                                <li><a href="visitor-info.html">Visitor Information</a></li>
+                                <li><a href="amenities.html">Amenities and Information</a></li>
+                                <li><a href="attractions.html">Ecotourism and Attractions</a></li>
+                                <li><a href="cons-efforts.html">Sustainability and Conservation Efforts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="galleries.html">Photo and Video Gallery</a></li>
+                    </ul>
+            </div>
+        </nav>
+        
+        <h3 style="text-align: center; margin-top: 50px; font-size: 20px"> Contact Us </h3>
+        
+        <div class="tour-location">
+        <iframe title="contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10434.85983527093!2d122.17872643975112!3d11.709130744266036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a5714b139cb1f1%3A0xd6c9dbd0d7936e3b!2sMonlaque%20Barangay%20Hall!5e1!3m2!1sen!2sph!4v1733333754681!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <table>
+            <tr>
+                <td class="contact-cell1"> 
+                    
+                    
+                    <form id="contactform">
+                        <input type="text"  placeholder="Full name" />
+                        <input type="email"  placeholder="Email"/>
+                        <input type="text" placeholder="Phone number" />
+                        <textarea style="margin: 5px;" cols="39" rows="10"  placeholder="How can I help you" ></textarea>
+                            
+                    </form>
+                    <button id="btncontact" class="btn-contact"> Submit </button>
+                    <div class="notif-contact" id="notification">Submit Successfully</div>
+                    
+                    
+                    
+                </td>
+                
+                <td class="contact-cell2"> 
+                    
+                    <table >
+                        <tr> 
+                            <td> 
+                                <h1 style="padding-bottom: 10px">Get in Touch With Us</h1>
+                                <div class="contact-details"> 
+                                    <img src="images/map.png"/> 
+                                    <p> Monlaque, Ibajay, Aklan </p> 
+                                </div>
+                            </td>
+                        </tr>
+                            <tr>
+                            <td> <div class="contact-details"> 
+                                    <img src="images/pnumber.png"/> 
+                                    <p> 09385201554 </p> 
+                                
+                                </div>
+                            </td>
+                        </tr>
+                       
+                        
+                        
+                        
+                        <tr>
+                            <td >  <div class="socmed">
+                                    <h5 style="margin-left: 44px " >Social media </h5>
+                                    
+                                    <a href="https://www.facebook.com/profile.php?id=61564879439800&mibextid=ZbWKwL" style="display: block"> <img src="images/fb.png"/> </a> 
+                                    
+                                    
+                                </div>
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                    </table>
+                    
+                </td>
+            </tr>
+        </table>
+        
+        <script>
+    const bookButton = document.getElementById('btncontact');
+    const notification = document.getElementById('notification');
+    const bookingForm = document.getElementById('contactform');
+                
+    bookButton.addEventListener('click', () => {
+        // Display notification
+        notification.style.display = 'block';
+
+        // Hide the notification after 3 seconds
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 3000);
+        bookingForm.reset();
+    });
+</script>
+        
+    </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Booking</title>
+    </head>
+    <body>
+    
+        <nav>
+            <a class="logo" href="home-page.html"> 
+            <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif" > Nablian  </h2>
+            </a>
+             <div class="navbar">
+                    <ul>
+                        <li> <a href="about-us.html">About Us </a>
+                            <ul class="dropdown" >
+                                <li><a href="blog-section.html">Blog Section  </a></li>
+                                <li><a href="events-updates.html">Events and Updates</a></li>
+                                <li><a href="visitor-info.html">Visitor Information</a></li>
+                                <li><a href="amenities.html">Amenities and Information</a></li>
+                                <li><a href="attractions.html">Ecotourism and Attractions</a></li>
+                                <li><a href="cons-efforts.html">Sustainability and Conservation Efforts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="galleries.html">Photo and Video Gallery</a></li>
+                    </ul>
+            </div>
+        </nav>
+        
+        
+        
+        <div class="container">
+            <div class="amenities" >
+                <div class="amenities-container">
+                    <br />
+                    
+
+                    <div class="amenities-background">
+                        <h2 style="padding-top: 25px; margin-left: 50px"> Reserve Yours Now </h2>
+                        <div class="amenities-row">
+                            
+                            <div class="amenities-1">
+                                <img src="images/c1.jpg">
+                                <h3 style="margin-top: 10px; text-align: justify" > Cottage 1 </h3>
+                                <hr style="margin-top: 10px">
+                                <p> <b> ₱ 200 </b>  </p>
+
+                            </div>
+
+                            <div class="amenities-1">
+                                <img src="images/c2.jpg">
+                                <h3 style="margin-top: 10px; text-align: justify" > Cottage 2 </h3>
+                                <hr style="margin-top: 10px">
+                                <p> <b> ₱ 200 </b>  </p>
+
+                            </div>
+                        </div>
+                    
+                    
+                    <div class="amenities-row">
+                        <div class="amenities-1">
+                            <img src="images/c3.jpg">
+                            <h3 style="margin-top: 10px; text-align: justify" > Cottage 3 </h3>
+                                <hr style="margin-top: 10px">
+                                <p> <b> ₱ 200 </b>  </p>
+                            
+                        </div>
+                        
+                        <div class="amenities-1">
+                            <img src="images/c4.jpg">
+                            <h3 style="margin-top: 10px; text-align: justify" > Cottage 4 </h3>
+                                <hr style="margin-top: 10px">
+                                <p> <b> ₱ 200 </b>  </p>
+                            
+                        </div>
+                    </div>
+                        
+                    <div class="amenities-row">
+                        <div class="amenities-1">
+                            <img src="images/c5.jpg">
+                            <h3 style="margin-top: 10px; text-align: justify" > Cottage 5 </h3>
+                                <hr style="margin-top: 10px">
+                                <p> <b> ₱ 200 </b>  </p>
+                            
+                        </div>
+                        
+                        <div class="amenities-1">
+                            <img src="images/c6.jpg">
+                            <h3 style="margin-top: 10px; text-align: justify" > Cottage 6 </h3>
+                                <hr style="margin-top: 10px">
+                                <p> <b> ₱ 200 </b>  </p>
+                            
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+            
+            <table class="table-booking" >
+                <tr>
+                    <td>
+                        <form id="bookingForm">
+                            <div class="form-row">
+                                <label>FIRST NAME
+                                    <input type="text" placeholder="First Name" />
+                                </label>
+
+                                <label>LAST NAME
+                                    <input type="text" placeholder="Last Name" />
+                                </label>
+                            </div>
+                            
+                            <div class="form-row">
+                                <label>PHONE NUMBER
+                                    <input type="text" placeholder="Phone" />
+                                </label>
+
+                                <label>EMAIL
+                                    <input type="text" placeholder="Email" />
+                                </label>
+                            </div>
+
+                            <div class="form-row">
+
+                                <label>DATE
+                                    <input type="date"/>
+                                </label>
+
+                                <label> PICK A COTTAGE
+                                    <select id="listcottage" name="cottages">
+                                        <option value="cottage1">--select--</option>
+                                          <option value="cottage1">Cottage 1</option>
+                                          <option value="cottage2">Cottage 2</option>
+                                          <option value="cottage3">Cottage 3</option>
+                                          <option value="cottage3">Cottage 4</option>
+                                            <option value="cottage3">Cottage 5</option>
+                                          <option value="cottage3">Cottage 6</option>
+                                    </select>
+                                </label>
+                            </div>
+                            
+                            <div class="form-row">
+                                
+                                <textarea cols="50" rows="10" placeholder="Message"></textarea>
+                                
+                            </div>
+
+                                <button class="btn-booking" id="buttonbook" type="button" >Confirm</button>
+                                <div class="notification" id="notification">Book Successfully</div>
+                        </form>
+
+                    </td>
+                </tr>
+</table>
+
+    </div>
+            
+            <script>
+    const bookButton = document.getElementById('buttonbook');
+    const notification = document.getElementById('notification');
+    const bookingForm = document.getElementById('bookingForm');
+                
+    bookButton.addEventListener('click', () => {
+        // Display notification
+        notification.style.display = 'block';
+
+        // Hide the notification after 3 seconds
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 3000);
+        bookingForm.reset();
+    });
+</script>
+    
+    </body>
+</html>
